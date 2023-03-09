@@ -60,4 +60,8 @@ public class CustomList extends ArrayAdapter<City> {
         cities.remove(city);
     }
 
+    public void hasCity(City city){
+
+    }
+
 }
