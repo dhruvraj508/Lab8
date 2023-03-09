@@ -54,6 +54,9 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void deleteCity(City city){
+        if (!cities.contains(city)){
+            throw new IllegalArgumentException("The list does not contain the given city.");
+        }
         cities.remove(city);
     }
 
